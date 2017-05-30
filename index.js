@@ -8,7 +8,7 @@
             exports: {}
         };
         factory(mod.exports, mod);
-        global.fetchAll = mod.exports;
+        global.fetchPipe = mod.exports;
     }
 })(this, function(exports, module) {
     'use strict';
@@ -340,7 +340,7 @@
         });
     }
 
-    function fetchAll(options) {
+    function fetchPipe(options) {
 
         let defaultObj = {
             type: 'GET',
@@ -365,5 +365,5 @@
         }
     }
 
-    module.exports = fetchAll;
+    module.exports = fetchPipe;
 });

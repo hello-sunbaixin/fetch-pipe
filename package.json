@@ -1,6 +1,6 @@
 {
     "name": "fetch-pipe",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "The fetch-pipe can be synchronous and asynchronous request by the promise",
     "main": "index.js",
     "scripts": {

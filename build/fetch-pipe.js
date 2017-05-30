@@ -14,7 +14,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             exports: {}
         };
         factory(mod.exports, mod);
-        global.fetchAll = mod.exports;
+        global.fetchPipe = mod.exports;
     }
 })(undefined, function (exports, module) {
     'use strict';
@@ -361,7 +361,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         });
     }
 
-    function fetchAll(options) {
+    function fetchPipe(options) {
 
         var defaultObj = {
             type: 'GET',
@@ -388,5 +388,5 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
     }
 
-    module.exports = fetchAll;
+    module.exports = fetchPipe;
 });
