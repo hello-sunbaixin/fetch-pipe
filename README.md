@@ -1,5 +1,6 @@
 # fetch-pipe 
 利用promise改造的ajax请求 可以跨域请求 也可以xml请求
+
 ## Installation
 
 You can install with `npm`.
@@ -37,8 +38,8 @@ fetchPipe({
 ```
 note：fetchPipe内的参数以对象的形式传进去，所传的参数规则同ajax一致
 
-### 跨域请求一定要设定dataType:'jsonp' ,Set JSONP callback name, default is 'callback'；Set JSONP request timeout, default is 5000ms
-
+### 跨域请求一定要设定dataType:'jsonp' 
+Set JSONP callback name, default is 'callback';ßSet JSONP request timeout, default is 5000ms
 ```javascript
 fetchPipe({
     url:'/users.jsonp', 
@@ -57,8 +58,8 @@ fetchPipe({
   })
 ```
 
-### 非跨域请求 是按照dataType不是jsonp来判断的 则按照XMLHttpRequest进行请求
-
+### 非跨域请求
+非跨域请求 是按照dataType不是jsonp来判断的 则按照XMLHttpRequest进行请求
 ```javascript
 fetchPipe({
     url:'/xml.json',
@@ -91,4 +92,4 @@ MIT
 
 # Acknowledgement
 
-Thanks to [github/fetch-jsonp](https://github.com/camsong/fetch-jsonp) [github/xhr-promise](https://github.com/scottbrady/xhr-promise)  [eastlee](https://github.com/EastLee)
+Thanks to [eastlee](https://github.com/EastLee)
