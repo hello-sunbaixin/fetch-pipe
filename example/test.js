@@ -1,4 +1,4 @@
-const fetchAll = require('../build/fetch-all.js');
+const fetchAll = require('../build/fetch-pipe.js');
 var expect = require('chai').expect;
 describe('fetchAll测试', function() {
     it('fetchAll异步请求实例结果是', function() {

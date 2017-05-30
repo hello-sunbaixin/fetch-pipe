@@ -18,8 +18,8 @@ require('es6-promise').polyfill();
 
 ## Usage
 ```
-const fetchAll=require('fetch-all');
-fetchAll({
+const fetchPipe=require('fetch-pipe');
+fetchPipe({
     url:'/users.jsonp', //Set type name, default is 'GET'；
     data:{key:1},
     type:'post'
@@ -35,12 +35,12 @@ fetchAll({
   })
   
 ```
-note：fetchAll内的参数以对象的形式传进去，所传的参数规则同ajax一致
+note：fetchPipe内的参数以对象的形式传进去，所传的参数规则同ajax一致
 
 ### 跨域请求一定要设定dataType:'jsonp' ,Set JSONP callback name, default is 'callback'；Set JSONP request timeout, default is 5000ms
 
 ```javascript
-fetchAll({
+fetchPipe({
     url:'/users.jsonp', 
     dataType:'jsonp',
     data:{key:1},
@@ -60,7 +60,7 @@ fetchAll({
 ### 非跨域请求 是按照dataType不是jsonp来判断的 则按照XMLHttpRequest进行请求
 
 ```javascript
-fetchAll({
+fetchPipe({
     url:'/xml.json',
     data:'key=1&value=3'
     

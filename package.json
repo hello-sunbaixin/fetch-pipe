@@ -1,7 +1,7 @@
 {
-    "name": "fetch-all",
+    "name": "fetch-pipe",
     "version": "1.0.1",
-    "description": "The fetch - all can be synchronous and asynchronous request by the promise",
+    "description": "The fetch-pipe can be synchronous and asynchronous request by the promise",
     "main": "index.js",
     "scripts": {
         "build": "babel lib --out-dir build",
@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/hello-sunbaixin/fetch-all.git"
+        "url": "git+https://github.com/hello-sunbaixin/fetch-pipe.git"
     },
     "keywords": [
         "fetch",
@@ -21,9 +21,9 @@
     "author": "jerry",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/hello-sunbaixin/fetch-all/issues"
+        "url": "https://github.com/hello-sunbaixin/fetch-pipe/issues"
     },
-    "homepage": "https://github.com/hello-sunbaixin/fetch-all#readme",
+    "homepage": "https://github.com/hello-sunbaixin/fetch-pipe#readme",
     "devDependencies": {
         "babel": "^5.8.21",
         "chai": "~3.4.1",

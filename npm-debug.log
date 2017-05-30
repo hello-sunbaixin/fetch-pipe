@@ -10,14 +10,14 @@
 7 silly cache add   scope: null,
 7 silly cache add   name: null,
 7 silly cache add   rawSpec: '.',
-7 silly cache add   spec: '/Users/sunbaixin/learn/fetch-all',
+7 silly cache add   spec: '/Users/sunbaixin/learn/fetch-pipe',
 7 silly cache add   type: 'directory' }
 8 verbose addLocalDirectory /Users/sunbaixin/.npm/fetch-all/1.0.1/package.tgz not in flight; packing
 9 verbose correctMkdir /Users/sunbaixin/.npm correctMkdir not in flight; initializing
 10 verbose tar pack [ '/Users/sunbaixin/.npm/fetch-all/1.0.1/package.tgz',
-10 verbose tar pack   '/Users/sunbaixin/learn/fetch-all' ]
+10 verbose tar pack   '/Users/sunbaixin/learn/fetch-pipe' ]
 11 verbose tarball /Users/sunbaixin/.npm/fetch-all/1.0.1/package.tgz
-12 verbose folder /Users/sunbaixin/learn/fetch-all
+12 verbose folder /Users/sunbaixin/learn/fetch-pipe
 13 info prepublish fetch-all@1.0.1
 14 verbose addLocalTarball adding from inside cache /Users/sunbaixin/.npm/fetch-all/1.0.1/package.tgz
 15 verbose correctMkdir /Users/sunbaixin/.npm correctMkdir not in flight; initializing
@@ -43,9 +43,9 @@
 20 silly publish   devDependencies: { babel: '^5.8.21', chai: '~3.4.1', mocha: '3' },
 20 silly publish   readme: '# fetch-all \n利用promise改造的ajax请求 可以跨域请求 也可以xml请求\n## Installation\n\nYou can install with `npm`.\n\n```\nnpm install fetch-all\n```\n\n## Promise Polyfill for IE\n\nIE8/9/10/11 does not support [ES6 Promise](https://tc39.github.io/ecma262/#sec-promise-constructor), run this to polyfill the global environment at the beginning of your application.\n\n```js\nrequire(\'es6-promise\').polyfill();\n```\n\n## Usage\n```\nconst fetchAll=require(\'fetch-all\');\nfetchAll({\n    url:\'/users.jsonp\', //Set type name, default is \'GET\'；\n    data:{key:1},\n    type:\'post\'\n  })\n  .then(function(response) {\n    return response.json()\n  }).then(function(json) {\n  //接收成功数据\n    console.log(\'parsed json\', json)\n  }).catch(function(ex) {\n  //捕获异常\n    console.log(\'parsing failed\', ex)\n  })\n  \n```\nnote：fetchAll内的参数以对象的形式传进去，所传的参数规则同ajax一致\n\n### 跨域请求一定要设定dataType:\'jsonp\' ,Set JSONP callback name, default is \'callback\'；Set JSONP request timeout, default is 5000ms\n\n```javascript\nfetchAll({\n    url:\'/users.jsonp\', \n    dataType:\'jsonp\',\n    data:{key:1},\n    timeout:3000,\n    jsonpCallback: \'custom_callback\',\n    jsonpCallbackFunction: \'<name of your callback function>\'\n  })\n  .then(function(response) {\n    return response.json()\n  }).then(function(json) {\n    console.log(\'parsed json\', json)\n  }).catch(function(ex) {\n    console.log(\'parsing failed\', ex)\n  })\n```\n\n### 非跨域请求 是按照dataType不是jsonp来判断的 则按照XMLHttpRequest进行请求\n\n```javascript\nfetchAll({\n    url:\'/xml.json\',\n    data:\'key=1&value=3\'\n    \n  })\n  .then(function(response) {\n    return response.json()\n  }).then(function(json) {\n    console.log(\'parsed json\', json)\n  }).catch(function(ex) {\n    console.log(\'parsing failed\', ex)\n  })\n```\n\n### Caveats\n\nYou need to call `.then(function(response) { return response.json(); })` in order\nto keep consistent with Fetch API.\n\n## Browser Support\n\n![Chrome](https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_7-8/internet-explorer_7-8_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/src/safari/safari_48x48.png)\n--- | --- | --- | --- | --- |\nLatest ✔ | Latest ✔ | 8+ ✔ | Latest ✔ | 6.1+ ✔ |\n\n# License\n\nMIT\n\n# Acknowledgement\n\nThanks to [github/fetch-jsonp](https://github.com/camsong/fetch-jsonp) [github/xhr-promise](https://github.com/scottbrady/xhr-promise) \n',
 20 silly publish   readmeFilename: 'README.md',
-20 silly publish   gitHead: 'a4aa84ab5892273bb95245c14dbaa7d3d381dfb6',
+20 silly publish   gitHead: 'eab5747f7ed277c6d82488d59e6da9ebd10c5305',
 20 silly publish   _id: 'fetch-all@1.0.1',
-20 silly publish   _shasum: '6c79752499ca8c01ddeb3c5cf2071aac3119320e',
+20 silly publish   _shasum: '3ef0f807ecbe75c308949f443ee5dd088b52bccb',
 20 silly publish   _from: '.' }
 21 verbose getPublishConfig undefined
 22 silly mapToRegistry name fetch-all
@@ -63,22 +63,22 @@
 28 silly publish uploading /Users/sunbaixin/.npm/fetch-all/1.0.1/package.tgz
 29 verbose request uri https://registry.npmjs.org/fetch-all
 30 verbose request sending authorization for write operation
-31 info attempt registry request try #1 at 22:05:13
+31 info attempt registry request try #1 at 22:27:27
 32 verbose request using bearer token for auth
-33 verbose request id 622a1efd2d33b970
+33 verbose request id 6f368e9b6d947770
 34 http request PUT https://registry.npmjs.org/fetch-all
 35 http 403 https://registry.npmjs.org/fetch-all
 36 verbose headers { 'content-type': 'application/json',
 36 verbose headers   'cache-control': 'max-age=300',
 36 verbose headers   'content-length': '103',
 36 verbose headers   'accept-ranges': 'bytes',
-36 verbose headers   date: 'Tue, 30 May 2017 14:05:15 GMT',
+36 verbose headers   date: 'Tue, 30 May 2017 14:27:30 GMT',
 36 verbose headers   via: '1.1 varnish',
 36 verbose headers   connection: 'keep-alive',
-36 verbose headers   'x-served-by': 'cache-nrt6122-NRT',
+36 verbose headers   'x-served-by': 'cache-itm7422-ITM',
 36 verbose headers   'x-cache': 'MISS',
 36 verbose headers   'x-cache-hits': '0',
-36 verbose headers   'x-timer': 'S1496153115.745670,VS0,VE460',
+36 verbose headers   'x-timer': 'S1496154449.341475,VS0,VE667',
 36 verbose headers   vary: 'Accept-Encoding' }
 37 verbose request invalidating /Users/sunbaixin/.npm/registry.npmjs.org/fetch-all on PUT
 38 error publish Failed PUT 403
@@ -95,7 +95,7 @@
 39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
 40 verbose statusCode 403
 41 verbose pkgid fetch-all
-42 verbose cwd /Users/sunbaixin/learn/fetch-all
+42 verbose cwd /Users/sunbaixin/learn/fetch-pipe
 43 error Darwin 16.1.0
 44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
 45 error node v4.4.4
