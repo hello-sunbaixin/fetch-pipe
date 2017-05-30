@@ -1,0 +1,32 @@
+{
+    "name": "fetch-all",
+    "version": "1.0.1",
+    "description": "The fetch - all can be synchronous and asynchronous request by the promise",
+    "main": "index.js",
+    "scripts": {
+        "build": "babel lib --out-dir build",
+        "test": "mocha -R spec -t 5000 example/test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hello-sunbaixin/fetch-all.git"
+    },
+    "keywords": [
+        "fetch",
+        "fetch-all",
+        "promise",
+        "ajax",
+        "jsonp"
+    ],
+    "author": "jerry",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hello-sunbaixin/fetch-all/issues"
+    },
+    "homepage": "https://github.com/hello-sunbaixin/fetch-all#readme",
+    "devDependencies": {
+        "babel": "^5.8.21",
+        "chai": "~3.4.1",
+        "mocha": "3"
+    }
+}
