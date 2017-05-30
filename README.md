@@ -1,11 +1,11 @@
-# fetch-all 
+# fetch-pipe 
 利用promise改造的ajax请求 可以跨域请求 也可以xml请求
 ## Installation
 
 You can install with `npm`.
 
 ```
-npm install fetch-all
+npm install fetch-pipe
 ```
 
 ## Promise Polyfill for IE
@@ -91,4 +91,4 @@ MIT
 
 # Acknowledgement
 
-Thanks to [github/fetch-jsonp](https://github.com/camsong/fetch-jsonp) [github/xhr-promise](https://github.com/scottbrady/xhr-promise) 
+Thanks to [github/fetch-jsonp](https://github.com/camsong/fetch-jsonp) [github/xhr-promise](https://github.com/scottbrady/xhr-promise)  [eastlee](https://github.com/EastLee)
