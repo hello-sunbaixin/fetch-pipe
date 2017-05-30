@@ -39,7 +39,9 @@ fetchPipe({
 note：fetchPipe内的参数以对象的形式传进去，所传的参数规则同ajax一致
 
 ### 跨域请求
-跨域请求一定要设定dataType:'jsonp' ;Set JSONP callback name, default is 'callback';ßSet JSONP request timeout, default is 5000ms
+跨域请求一定要设定dataType:'jsonp' ;
+Set JSONP callback name, default is 'callback';
+Set JSONP request timeout, default is 5000ms
 ```javascript
 fetchPipe({
     url:'/users.jsonp', 
